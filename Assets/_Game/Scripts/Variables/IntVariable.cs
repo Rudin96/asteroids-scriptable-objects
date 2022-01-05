@@ -18,6 +18,11 @@ namespace Variables
             _currentValue += change;
         }
 
+        public virtual void SetValue(int newValue)
+        {
+            _currentValue = newValue;
+        }
+
         private void OnEnable()
         {
             _currentValue = _value;
@@ -25,6 +30,11 @@ namespace Variables
     }
 
     public class VariableBase<T> : ScriptableObject
+    {
+        
+    }
+
+    public class MyIntThingie : VariableBase<int>
     {
         
     }
