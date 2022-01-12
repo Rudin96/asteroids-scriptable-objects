@@ -21,4 +21,10 @@ namespace DefaultNamespace.ScriptableEvents
     {
         
     }
+
+    [Serializable]
+    public class UnityEventTransform : UnityEvent<Transform>
+    {
+
+    }
 }

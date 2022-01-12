@@ -22,5 +22,11 @@ namespace Ship
                 _healthObservable.ApplyChange(-1);
             }
         }
+
+        public void Teleport(Vector3 pos)
+        {
+            transform.SetPositionAndRotation(pos, transform.rotation);
+            Debug.Log("Teleport to " + pos);
+        }
     }
 }

@@ -115,6 +115,8 @@ GameObject:
   - component: {fileID: 2970632032652603878}
   - component: {fileID: 1947438807228636360}
   - component: {fileID: 4908282535492162380}
+  - component: {fileID: 6570595859471956945}
+  - component: {fileID: 1277242237036100899}
   m_Layer: 0
   m_Name: Ship_Sprite
   m_TagString: Untagged
@@ -215,6 +217,51 @@ PolygonCollider2D:
     - - {x: 1.28, y: -1.28}
       - {x: 0, y: 1.28}
       - {x: -1.28, y: -1.28}
+--- !u!114 &6570595859471956945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970632032652603877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e904391b2bd4a46aecbcd495f263d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventNoPayload: {fileID: 0}
+  _responseNoPayload:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2970632031999273636}
+        m_TargetAssemblyTypeName: Ship.Health, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _event: {fileID: 0}
+  _response:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1277242237036100899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2970632032652603877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb1ced47a0f9d3429bab9bd47aa4d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWrapEvent: {fileID: 11400000, guid: 46e4cdcc7ba403e4e850bcd62204d782, type: 2}
 --- !u!1 &2970632033307266042
 GameObject:
   m_ObjectHideFlags: 0
