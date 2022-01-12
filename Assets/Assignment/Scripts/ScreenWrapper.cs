@@ -19,11 +19,23 @@ public class ScreenWrapper : MonoBehaviour
     [SerializeField] [Range(-1f, 1f)] private float downOffset = -.1f;
 
     private Camera cam;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        cam = Camera.main;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void OnBecameInvisible()
     {
-        cam = Camera.main;
         screenWrapEvent.Raise(CalculateNewPos(transform.position));
+    }
+
+    private void Update()
+    {
+        //if(!spriteRenderer.isVisible)
+        //    screenWrapEvent.Raise(CalculateNewPos(transform.position));
     }
 
     private Vector3 CalculateNewPos(Vector3 pos)
