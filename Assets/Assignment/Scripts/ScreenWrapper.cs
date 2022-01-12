@@ -24,18 +24,11 @@ public class ScreenWrapper : MonoBehaviour
     private void Start()
     {
         cam = Camera.main;
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnBecameInvisible()
     {
         screenWrapEvent.Raise(CalculateNewPos(transform.position));
-    }
-
-    private void Update()
-    {
-        //if(!spriteRenderer.isVisible)
-        //    screenWrapEvent.Raise(CalculateNewPos(transform.position));
     }
 
     private Vector3 CalculateNewPos(Vector3 pos)
